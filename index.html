@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<style>
+    .row {
+  display: flex;
+}
+.column1 {
+  flex: 10%;
+  padding: 10px;
+  height: 296px;
+  margin-left:15px;
+  border-right: 1px solid black;
+  background-color:darkkhaki;
+  width:300px;
+  
+}
+.column2 {
+  flex: 70%;
+  padding: 10px;
+  height: 300px;
+  
+  
+}
+#spart
+{
+    padding:60px;
+}
+.form-group
+{
+    margin-top: -15px;
+    display: flex;
+}
+.form-group label{
+    float: left;
+    padding-right: 10px;
+}
+label{
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+  width:280px;
+}
+select{
+    width:100px;
+}
+option{
+    text-align: center;
+}
+    
+
+
+</style>
+
+</head>
+<body>
+
+     <div style="width:1000px;height:500px;border:1px solid black;margin: 70px;border-width: medium;">
+        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: center;padding-top: 20px;">Event 1</h3>
+        <p style="text-align: center;font-weight: 500;margin-top: 20px; font-weight: 500;"><b>Number of available seats: 23</b></p>
+
+          <div style="width:900px;height:300px;border:2px solid black;margin: 40px;">
+            <div class="row">
+                <div class="column1">
+                    <img src="download.png" alt="myimage" style="margin:40px">
+                </div>
+                <div class="column2" id="spart" >
+                    <div class="row-1 form-group">
+                        <span>    
+                         <label for="fname" ><b>Name: </b></label>
+                         <input type="text" id="fname">
+                        </span> 
+                        </div>
+                        <form>
+                        <div class="row-1 form-group">
+                        <span>
+                            <label for="Email"><b>Email: </b></label>
+                            <input type="email" id="Email">
+                           </span> 
+                        </div>
+                        <div class="row-1 form-group">
+                           <span>
+                            <label for="Phonenumber" ><b>Phonenumber: </b></label>
+                            <input  id="Phonenumber"> 
+                           </span> 
+                        </div>
+                        <div class="row-1 form-group">
+                           <span>
+                        
+                            <label><b>Number of seats: </b></label>
+                            
+                          
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                            
+                           </span> 
+                        </div>
+                        <div class="row-1 form-group">
+                            <span>
+                             <label><b>Name of Attendee2: </b></label>
+                             <input type="text">
+                            </span> 
+                        </div>
+                        <div class="form-group row" style="margin-left:150px;margin-top: 10px;">
+<button value="submit" class="col-sm-5 col-form-label btn btn-success">Submit</button>
+<button value="cancel" class="col-sm-5 col-form-label btn btn-danger" style="margin-left: 20px;">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+                    </div>
+                </div>
+                </div>
+       
+</body>
+</html>
